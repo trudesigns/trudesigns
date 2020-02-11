@@ -1,7 +1,12 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
 .navbar-toggle .icon-bar {
   background: $primary-color;
 }
 
+<<<<<<< HEAD
 input[type="email"],
 input[type="password"],
 input[type="text"],
@@ -16,23 +21,47 @@ input[type="tel"] {
   }
 }
 
+=======
+input[type="email"],input[type="password"],input[type="text"],input[type="tel"]{
+  box-shadow:none;
+  height:45px;
+  outline: none;
+  font-size:14px;
+  &:focus {
+    box-shadow: none;
+    border:1px solid $primary-color;
+  }
+}
+
+
+>>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
 .form-control {
   box-shadow: none;
   border-radius: 0;
   &:focus {
+<<<<<<< HEAD
     box-shadow: none;
     border: 1px solid $primary-color;
+=======
+    box-shadow:none;
+    border:1px solid $primary-color;
+>>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
   }
 }
 
 //
 
+<<<<<<< HEAD
 .py-7 {
+=======
+.py-7{
+>>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
   padding: 7rem 0px;
 }
 
 // Button Style
 
+<<<<<<< HEAD
 .btn {
   display: inline-block;
   font-size: 16px;
@@ -52,6 +81,27 @@ input[type="tel"] {
   }
 
   &:focus {
+=======
+.btn{
+  display: inline-block;
+  font-size: 14px;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  padding: 1rem 2.5rem;
+  text-transform: uppercase;
+  border-radius:0;
+  @include transition (all, 0.2s, ease);
+
+   &.btn-icon {
+    i {
+      font-size:16px;
+      vertical-align:middle;
+      margin-right:5px;
+    }
+  }
+
+  &:focus{
+>>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
     outline: 0px;
     border: 0px;
     box-shadow: none;
@@ -61,14 +111,22 @@ input[type="tel"] {
 .btn-main {
   background: $primary-color;
   color: $light;
+<<<<<<< HEAD
   @include transition(all, 0.2s, ease);
 
   &:hover {
     background: darken($primary-color, 20%);
+=======
+  @include transition (all, 0.2s, ease);
+ 
+  &:hover {
+    background: darken( $primary-color, 20% );
+>>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
     color: $light;
   }
 }
 
+<<<<<<< HEAD
 .btn-solid-border {
   border: 2px solid $primary-color;
   background: transparent;
@@ -88,21 +146,54 @@ input[type="tel"] {
   &:hover {
     background: transparent;
     color: $primary-color;
+=======
+
+.btn-solid-border {
+  border:2px solid $primary-color;
+  background:transparent;
+  color:$black;
+  
+  &:hover {
+    border:2px solid $primary-color;
+    background:$primary-color;
+  }
+}
+
+
+.btn-transparent {
+  @extend .btn-main;
+  background:transparent;
+  padding:0;
+  color:$primary-color;
+  &:hover {
+    background:transparent;
+    color:$primary-color;
+>>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
   }
 }
 
 .btn-large {
+<<<<<<< HEAD
   padding: 20px 45px;
   &.btn-icon {
     i {
       font-size: 16px;
       vertical-align: middle;
       margin-right: 5px;
+=======
+  padding:20px 45px;
+  &.btn-icon {
+    i {
+      font-size:16px;
+      vertical-align:middle;
+      margin-right:5px;
+>>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
     }
   }
 }
 
 .btn-small {
+<<<<<<< HEAD
   @extend .btn-main;
   padding: 10px 25px;
   font-size: 16px;
@@ -155,10 +246,63 @@ input[type="tel"] {
 }
 .section-sm {
   padding: 70px 0;
+=======
+  @extend .btn-main ;
+  padding:10px 25px;
+  font-size:12px;
+}
+
+.btn-round {
+  border-radius:4px;
+}
+.btn-round-full {
+  border-radius:50px;
+}
+
+
+.btn.active:focus, .btn:active:focus, .btn:focus {
+  outline: 0;
+}
+
+
+// Background
+
+.bg-gray {
+  background:$secondary-color;
+}
+.bg-primary {
+  background:$primary-color;
+}
+.bg-primary-dark {
+  background:darken($primary-color, 10%);
+}
+.bg-primary-darker {
+  background:darken($primary-color, 20%);
+}
+
+.bg-dark {
+  background:$black;
+}
+
+
+.bg-gradient{
+    background-image: linear-gradient(145deg, rgba(19, 177, 205, 0.95) 0%, rgba(152, 119, 234, 0.95) 100%);
+    background-repeat: repeat-x;
+}
+
+
+//  Section Title
+.section {
+  padding:100px 0;
+}
+.section-sm {
+  padding:70px 0;
+>>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
 }
 
 .section-title {
   margin-bottom: 70px;
+<<<<<<< HEAD
 
   .title {
     font-size: 50px;
@@ -179,6 +323,32 @@ input[type="tel"] {
 .overly {
   position: relative;
   &:before {
+=======
+ 
+ .title{
+  font-size: 50px;
+  line-height: 50px;
+ }
+  p {
+      color: #666;
+      font-family:$secondary-font;
+  }
+}
+
+
+.subtitle {
+  color: $primary-color;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+
+
+
+.overly {
+  position: relative;
+  &:before{
+>>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
     content: "";
     position: absolute;
     left: 0;
@@ -192,9 +362,16 @@ input[type="tel"] {
   }
 }
 
+<<<<<<< HEAD
 .overly-2 {
   position: relative;
   &:before {
+=======
+
+.overly-2 {
+  position: relative;
+  &:before{
+>>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
     content: "";
     position: absolute;
     left: 0;
@@ -203,6 +380,7 @@ input[type="tel"] {
     right: 0;
     width: 100%;
     height: 100%;
+<<<<<<< HEAD
     background: rgba(0, 0, 0, 0.8);
   }
 }
@@ -237,14 +415,57 @@ input[type="tel"] {
   letter-spacing: 0px;
 }
 
+=======
+    background: rgba(0,0,0,0.8);
+  }
+}
+
+
+.text-color{
+  color: $primary-color;
+}
+
+.text-black{
+  color: $black;
+}
+
+.text-color2{
+  color: $event-color;
+}
+
+.text-color2{
+  color: $law-color;
+}
+
+
+.text-sm{
+  font-size: 14px;
+}
+.text-md{
+  font-size: 2.25rem;
+}
+.text-lg{
+  font-size:3.75rem; 
+}
+
+.no-spacing{
+  letter-spacing: 0px
+}
+
+
+>>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
 /* Links */
 a {
   color: $black;
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 a:focus,
 a:hover {
+=======
+a:focus, a:hover {
+>>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
   color: $primary-color;
   text-decoration: none;
 }
@@ -253,11 +474,16 @@ a:focus {
   outline: none;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
 .content-title {
   font-size: 40px;
   line-height: 50px;
 }
 
+<<<<<<< HEAD
 .page-title {
   padding: 100px 0;
   @extend .overly;
@@ -267,10 +493,31 @@ a:focus {
     }
     p {
       color: $light;
+=======
+
+
+.page-title{
+  padding: 100px 0;
+  @extend .overly;
+  .block{
+    h1{
+      color:$light;
+    }
+    p{
+      color:$light;
+>>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
     }
   }
 }
 
+<<<<<<< HEAD
 .page-wrapper {
   padding: 70px 0;
 }
+=======
+
+.page-wrapper {
+  padding:70px 0;
+}
+
+>>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
