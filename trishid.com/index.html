@@ -1,0 +1,455 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Trish Designer</title>
+  <meta name="description" content="I am a UX/UI Designer living in California with over 6 years experience. Passionate about new projects.">
+  <meta name="viewport" content="width=device-width">
+  <!--favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel='stylesheet' href='bower_components/components-font-awesome/css/font-awesome.css' />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/mantra.css -->
+  <link rel="stylesheet" href="styles/bootstrap.css">
+  <link rel="stylesheet" href="styles/animate.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:200,300,800' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+</head>
+
+<body ng-app="trishApp" ng-controller="MainCtrl as ctrl">
+  <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <!--
+    /**
+     * Section 1
+     */ -->
+  <div id="splash-page">
+    <div class="splash-text-container">
+      <h1 class="trishtype">ALWAYS LOOKING FORWARD TO THE NEXT PROJECT</h1>
+      <h2>-Trish Bellardine</h2>
+      <!-- <p>User Experience/User interface Designer</p> -->
+    </div>
+    <div id="splash-page-bottom">
+      <a du-smooth-scroll du-scrollspy offset="70" ng-href="#my-work" ng-click="nav.toggleNav(true)">
+        <i class="fa fa-angle-down"></i>
+      </a>
+    </div>
+  </div>
+  <!--
+    /**
+     * Modal template
+     */ -->
+  <script type="text/ng-template" id="myModalContent.html"><div class="modal-header">
+        <span class="close fa fa-close fa-lg pull-right" ng-click="ModalInstanceCtrl.closeModal()"></span>
+        <h3 class="modal-title" ng-bind-html="ModalInstanceCtrl.getActiveSlideTitle()"></h3>
+      </div>
+      <div class="modal-body">
+        <div>
+          <uib-carousel>
+            <uib-slide ng-repeat="slide in ModalInstanceCtrl.slides" active="slide.active">
+              <img ng-src="{{ slide.image }}" style="margin:auto;">
+            </uib-slide>
+          </uib-carousel>
+        </div>
+      </div></script>
+  <!--
+    /**
+     * NEW Modal template
+     */ -->
+  <script type="text/ng-template" id="newModalContent.html"><div class="modal-header">
+        <span class="close fa fa-close fa-lg pull-right" ng-click="NewModalInstanceCtrl.closeModal()"></span>
+        <h3 class="modal-title" ng-bind-html="NewModalInstanceCtrl.getActiveSlideTitle()"></h3>
+      </div>
+      <div class="modal-body">
+        <div>
+          <uib-carousel>
+            <uib-slide ng-repeat="slide in NewModalInstanceCtrl.slides" active="slide.active">
+              <div class="newModalContentHTML" ng-bind-html="NewModalInstanceCtrl.getActiveSlideContent()"></div>
+            </uib-slide>
+          </uib-carousel>
+        </div>
+      </div></script>
+  <!--
+    /**
+     * Navbar
+     *
+     */ -->
+  <div ng-controller="NavigationCtrl as nav">
+    <!--
+       /**
+       *
+       * This element is for handling scroll and nav correlations.
+       */ -->
+    <div id="anchorBeginIsScrolledDown" ng-class="{'navbar-equal-height-fix': nav.isScrolledDown}"></div>
+    <!--
+      /**
+       * Bootstrap navbar component
+       */ -->
+    <!-- Add your site or application content here -->
+    <nav id="navbar" class="navbar navbar-inverse" ng-class="{'navbar-fixed-top': nav.isScrolledDown}">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" ng-class="{'cross': !nav.isCollapsed}" ng-click="nav.toggleNav()">MENU</button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- <div collapse="nav.isCollapsed" id="navbarNav"> -->
+        <div uib-collapse="nav.isCollapsed">
+          <ul class="nav navbar-nav">
+            <li>
+              <a du-smooth-scroll du-scrollspy offset="70" ng-href="#my-work" ng-click="nav.toggleNav(true)">Projects</a>
+            </li>
+            <li>
+              <a du-smooth-scroll du-scrollspy offset="70" ng-href="#about-me" ng-click="nav.toggleNav(true)">About</a>
+            </li>
+            <li>
+              <a du-smooth-scroll du-scrollspy offset="70" ng-href="#work-with-me" ng-click="nav.toggleNav(true)">Contact</a>
+            </li>
+            <li>
+              <a href="/files/trishB_resume.pdf" target="_blank">Resume</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+
+  </div>
+
+  <!--
+    /**
+     * Section 2
+     */ -->
+  <section id="my-work" class="container-fluid">
+    <div class="text-center wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="100ms">
+      <h1>Projects</h1>
+    </div>
+    <div class="row">
+
+      <div class="col-md-3 col-sm-6 col-lg-6 center">
+  <div class="well well-effect" trish-modal filter="mywork/websites">
+    <img src="/images/niz_main.png" alt="">
+    <a href="http://trishid.com/niz.html">
+      <h2>Doctor's Portfolio: UX Design and Development</h2>
+    </a>
+  </div>
+</div>
+
+<div class="col-md-3 col-sm-6 col-lg-6 center">
+  <div class="well well-effect" trish-modal filter="mywork/websites">
+    <img src="/images/ID_marketing_main.png" alt="">
+    <a href="http://trishid.com/id_marketing.html">
+      <h2>ID Marketing Redesign: UX Case Study</h2>
+    </a>
+  </div>
+</div>
+
+
+<div class="col-md-3 col-sm-6 col-lg-6 center">
+  <div class="well well-effect" trish-modal filter="mywork/websites">
+    <img src="/images/woke_main.png" alt="">
+    <a href="http://trishid.com/woke.html">
+      <h2>Woke: UX Design and Development</h2>
+    </a>
+  </div>
+</div>
+
+
+
+      <div class="col-md-3 col-sm-6 col-lg-6 center">
+        <div class="well well-effect" trish-modal filter="mywork/websites">
+          <img src="/images/lavote_main.png" alt="">
+          <a href="http://trishid.com/lavote.html">
+            <h2>LA Vote: UI and Graphic Design</h2>
+          </a>
+        </div>
+      </div>
+
+       <div class="col-md-3 col-sm-6 col-lg-6 center">
+        <div class="well well-effect" trish-modal filter="mywork/websites">
+          <img src="/images/trudesigns_main.png" alt="">
+          <a href="http://trishid.com/trudesigns.html">
+            <h2>Tru Designs: UX/UI and Product Design</h2>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="col-md-3 col-sm-6 col-lg-6 center">
+        <div class="well well-effect" trish-modal filter="mywork/websites">
+          <img src="/images/flexit_main.png" alt="">
+          <a href="http://trishid.com/flexit.html">
+            <h2>Flexit: UX/UI Design</h2>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="col-md-3 col-sm-6 col-lg-6 center">
+        <div class="well well-effect" trish-modal filter="mywork/websites">
+          <img src="/images/vibes_main_color.png" alt="">
+          <a href="http://trishid.com/vibes.html">
+            <h2>Vibes:Product Design</h2>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 col-lg-6 center">
+        <div class="well well-effect" trish-modal filter="mywork/websites">
+          <img src="/images/icare_main_color.png" alt="">
+          <a href="http://trishid.com/iCare.html">
+            <h2>iCare: UX/UI Design</h2>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="col-md-3 col-sm-6 col-lg-6 center">
+        <div class="well well-effect" trish-modal filter="mywork/websites">
+          <img src="/images/chaos_main.png" alt="">
+          <a href="http://trishid.com/chaos.html">
+            <h2>Chaos: Product Design</h2>
+          </a>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-3 col-sm-6 col-lg-6 center">
+        <div class="well well-effect" trish-modal filter="mywork/websites">
+          <img src="/images/code_games_main.png" alt="">
+          <a href="http://trishid.com/codeGames.html">
+            <h2>Code Game: Design and Development</h2>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+
+    </div>
+  </section>
+
+  <!--
+    /**
+     * Section 3
+     */ -->
+  <section id="about-me" class="container-fluid">
+    <div class="text-center wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="100ms">
+      <h1>about me</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 col-xs-12 center">
+        <div class="about-top">
+          <img src="/images/about-me.png" alt="about-me">
+          <h3>about me</h3>
+        </div>
+        <div class="about-wrapper">
+          <div class="about-pre-content">
+            <p>“Life without the experience is just meaningless.”</p>
+            <p>- Me</p>
+          </div>
+          <div class="about-content">
+            <!-- <img class="about-content-image" src="/images/about-me-about-me.png" alt="about-me"> -->
+            <div class="text">
+              <p>I enjoy everything artistic! My engine runs off of excitement and innovation. I geek out over
+                influencing human
+                behavior through intentional and thoughtful design. I am a designer with many styles and I aim to
+                please.
+                My passion in design, science, technology, and psychology has been fulfilled with the career path I
+                have
+                chosen, and I am excited for the future of design, programming, UX, UI, HCI, and product development.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12 center">
+        <div class="about-top">
+          <img src="/images/process.png" alt="my process">
+          <h3>my process</h3>
+        </div>
+        <div class="about-wrapper">
+          <div class="about-pre-content">
+            <p>“There is a method to my madness.”</p>
+            <p>- Shakespeare</p>
+          </div>
+          <div class="about-content">
+            <!-- <img class="about-content-image" src="/images/about-me-process.png" alt="about-me"> -->
+            <div class="text">
+              <p>I take whatever concept I have at hand and then I research my audience. I start off with sketching
+              wireframes,
+              and then I put my design into a digital mockup and work on the interactions and over
+              all
+              visual design. I then create a live prototype to deliver the project. Once the completed project goes
+              live after development,
+              I gather the data and analytics from the user's interaction and I then make any modifications to the
+              design
+              based on facts.</p>
+              <p>TADA!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12 center">
+        <div class="about-top">
+         <img src="/images/experience.png" alt="my experience">
+          <h3>my experience</h3>
+        </div>
+        <div class="about-wrapper">
+          <div class="about-pre-content">
+            <p>“It's not just what it looks like and feels like, it's how it works.”</p>
+            <p>- Steve Jobs</p>
+          </div>
+          <div class="about-content">
+            <!-- <img class="about-content-image" src="/images/about-me-experience.png" alt="about-me"> -->
+            <div class="text">
+
+              <ul>
+                <li>I worked for the Los Angeles County RRCC as a Lead UI Designer. I redesigned their website, created
+                  eblasts, designed
+                  numerous amount of print material for the Presidential elections, and I created mockups for the new
+                  voting system.</li>
+                <li>I worked for Implant Direct in the IT web department as the Head UX/UI designer for their global
+                  international web
+                  team. I redesigned their marketing site to be responsive and did a UX research for prototyping a new
+                  eCommerce site, I
+                  also designed a parallax landing page, newsletters, and maintained 9 of their international websites.</li>
+                <li>I freelance under Tru Designs creating marketing materials, designing and printing apparel and
+                  developing websites, for
+                  small business.</li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12 center">
+        <div class="about-top">
+        <img src="/images/education.png" alt="my education">
+          <h3>my education</h3>
+        </div>
+        <div class="about-wrapper">
+          <div class="about-pre-content">
+            <p>“Be happy, but never satisfied.”</p>
+            <p>- Bruce Lee</p>
+          </div>
+          <div class="about-content">
+            <!-- <img class="about-content-image" src="/images/about-me-education.png" alt="about-me"> -->
+            <div class="text">
+
+              <ul>
+                <li>BS in Graphics and Web Design, Web Design concentrated from The Art Institute of
+                  California. 2019</li>
+                <li>Certification in UX design from Nielsen Norman Group.2015
+                </li>
+                <li>AA in Web Interactive Media Design from The Art Institute of California. 2012</li>
+                <li>AA in Child Development from Moorpark.2006</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--
+    /**
+     * Contact
+     */ -->
+  <section id="work-with-me" class="container-fluid">
+    <div class="text-center wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="100ms">
+      <h1>Contact</h1>
+    </div>
+
+<div class="typeform-widget" data-url="https://trishbellardine.typeform.com/to/qwUoUw" data-transparency="1" style="width: 100%; height: 500px;"></div>
+<script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
+
+
+
+
+
+
+
+    <hr>
+    <div class="social container">
+
+      <a href="https://www.linkedin.com/in/patricia-bellardine-9b6ba52b" alt="Linkedin">
+        <span class="fa fa-linkedin"></span>
+      </a>
+      <a href="mailto:trishbellardine@gmail.com" alt="Email">
+        <span class="fa fa-envelope"></span>
+      </a>
+      <a href="https://github.com/trudesigns" alt="Github">
+        <span class="fa fa-github"></span>
+      </a>
+    </div>
+
+  </section>
+
+  <!--
+    /**
+     * Google Analytics key will be set upon grunt deploy,
+     * grunt replace is configured to find the pattern @@gaKey
+     * and replace it with the current configs gaKey.
+     */ -->
+  <script>
+    !function (A, n, g, u, l, a, r) {
+      A.GoogleAnalyticsObject = l, A[l] = A[l] || function () {
+        (A[l].q = A[l].q || []).push(arguments)
+      }, A[l].l = +new Date, a = n.createElement(g),
+        r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+    }(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '@@gaKey');
+    ga('send', 'pageview');
+  </script>
+
+  <!-- build:js(.) scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="bower_components/angular-scroll/angular-scroll.js"></script>
+  <script src="bower_components/angular-touch/angular-touch.js"></script>
+  <script src="bower_components/wow/dist/wow.js"></script>
+  <script src="bower_components/typed.js/dist/typed.min.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js({.tmp,app}) scripts/scripts.js -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/services/config.js"></script>
+  <script src="scripts/controllers/main.js"></script>
+  <script src="scripts/controllers/modalinstance.js"></script>
+  <script src="scripts/controllers/newmodalinstance.js"></script>
+  <script src="scripts/controllers/navigation.js"></script>
+  <script src="scripts/directives/trishModal.js"></script>
+  <script src="scripts/directives/newModal.js"></script>
+  <script src="scripts/services/contact.js"></script>
+  <script src="scripts/services/alert.js"></script>
+  <script src="scripts/services/mywork.js"></script>
+  <script src="scripts/services/newcontent.js"></script>
+  <script src="scripts/services/contentsource.js"></script>
+  <script src="scripts/services/spreadsheet.js"></script>
+  <!-- endbuild -->
+
+</body>
+
+</html>

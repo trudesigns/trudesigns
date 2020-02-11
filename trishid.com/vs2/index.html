@@ -1,0 +1,68 @@
+<!doctype html> <html> <head> <meta charset="utf-8"> <title>Trish Designer</title> <meta name="description" content="I am a UX/UI Designer living in California with over 5 years experience in designing. Freelancing 24/7 and always passionate about new projects."> <meta name="viewport" content="width=device-width"> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="styles/vendor.css"> <link rel="stylesheet" href="styles/mantra.css"> <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,800" rel="stylesheet" type="text/css"> <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css"> </head> <body ng-app="trishApp" ng-controller="MainCtrl as ctrl"> <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--> <!--
+    /**
+     * Section 1
+     */ --> <div id="splash-page"> <div class="splash-text-container"> <h1 class="trishtype"></h1> <h2>-Trish Bellardine</h2> <!-- <p>User Experience/User interface Designer</p> --> </div> <div id="splash-page-bottom"> <a du-smooth-scroll du-scrollspy offset="70" ng-href="#my-work" ng-click="nav.toggleNav(true)"> <i class="fa fa-angle-down"></i> </a> </div> </div> <!--
+    /**
+     * Modal template
+     */ --> <script type="text/ng-template" id="myModalContent.html"><div class="modal-header">
+        <span class="close fa fa-close fa-lg pull-right" ng-click="ModalInstanceCtrl.closeModal()"></span>
+        <h3 class="modal-title" ng-bind-html="ModalInstanceCtrl.getActiveSlideTitle()"></h3>
+      </div>
+      <div class="modal-body">
+        <div>
+          <uib-carousel>
+            <uib-slide ng-repeat="slide in ModalInstanceCtrl.slides" active="slide.active">
+              <img ng-src="{{ slide.image }}" style="margin:auto;">
+            </uib-slide>
+          </uib-carousel>
+        </div>
+      </div></script> <!--
+    /**
+     * NEW Modal template
+     */ --> <script type="text/ng-template" id="newModalContent.html"><div class="modal-header">
+        <span class="close fa fa-close fa-lg pull-right" ng-click="NewModalInstanceCtrl.closeModal()"></span>
+        <h3 class="modal-title" ng-bind-html="NewModalInstanceCtrl.getActiveSlideTitle()"></h3>
+      </div>
+      <div class="modal-body">
+        <div>
+          <uib-carousel>
+            <uib-slide ng-repeat="slide in NewModalInstanceCtrl.slides" active="slide.active">
+              <div class="newModalContentHTML" ng-bind-html="NewModalInstanceCtrl.getActiveSlideContent()"></div>
+            </uib-slide>
+          </uib-carousel>
+        </div>
+      </div></script> <!--
+    /**
+     * Navbar
+     *
+     */ --> <div ng-controller="NavigationCtrl as nav"> <!--
+       /**
+       *
+       * This element is for handling scroll and nav correlations.
+       */ --> <div id="anchorBeginIsScrolledDown" ng-class="{'navbar-equal-height-fix': nav.isScrolledDown}"></div> <!--
+      /**
+       * Bootstrap navbar component
+       */ --> <!-- Add your site or application content here --> <nav id="navbar" class="navbar navbar-inverse" ng-class="{'navbar-fixed-top': nav.isScrolledDown}"> <div class="container-fluid"> <!-- Brand and toggle get grouped for better mobile display --> <div class="navbar-header"> <button type="button" class="navbar-toggle" ng-class="{'cross': !nav.isCollapsed}" ng-click="nav.toggleNav()">MENU</button> </div> <!-- Collect the nav links, forms, and other content for toggling --> <!-- <div collapse="nav.isCollapsed" id="navbarNav"> --> <div uib-collapse="nav.isCollapsed"> <ul class="nav navbar-nav"> <li> <a du-smooth-scroll du-scrollspy offset="70" ng-href="#my-work" ng-click="nav.toggleNav(true)">my work</a> </li> <li> <a du-smooth-scroll du-scrollspy offset="70" ng-href="#about-me" ng-click="nav.toggleNav(true)">about me</a> </li> <li> <a du-smooth-scroll du-scrollspy offset="70" ng-href="#work-with-me" ng-click="nav.toggleNav(true)">work with me</a> </li> <li> <a href="/files/TrishBelladine_Resume_2017_.pdf" target="_blank">resume</a> </li> </ul> </div><!-- /.navbar-collapse --> </div><!-- /.container-fluid --> </nav> </div> <!--
+    /**
+     * Section 2
+     */ --> <section id="my-work" class="container-fluid"> <div class="text-center wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="100ms"> <h1>my work</h1> </div> <div class="row"> <div class="col-md-3 col-sm-6 center"> <div class="well well-effect" new-modal> <img src="/images/myWork_UX_projects.png" alt=""> <h2>ux projects</h2> </div> </div> <div class="col-md-3 col-sm-6 center"> <div class="well well-effect" trish-modal filter="mywork/websites"> <img src="/images/mywork-websites.png" alt=""> <h2>websites</h2> </div> </div> <div class="col-md-3 col-sm-6 center"> <div class="well well-effect" trish-modal filter="mywork/designDoc"> <img src="/images/mywork-docs.png" alt=""> <h2>design documents</h2> </div> </div> <div class="col-md-3 col-sm-6 center"> <div class="well well-effect" trish-modal filter="mywork/graphics"> <img src="/images/mywork-graphics.png" alt=""> <h2>graphics</h2> </div> </div> </div> </section> <!--
+    /**
+     * Section 3
+     */ --> <section id="about-me" class="container-fluid"> <div class="text-center wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="100ms"> <h1>about me</h1> </div> <div class="row"> <div class="col-md-3 col-sm-6 col-xs-12 center"> <div class="about-top"> <img src="/images/about-me.png" alt="about-me"> <h3>about me</h3> </div> <div class="about-wrapper"> <div class="about-pre-content"> <p>“Living life one experience at a time”</p> <p>- Me</p> </div> <div class="about-content"> <img class="about-content-image" src="/images/about-me-about-me.png" alt="about-me"> <div class="text"> <p>I enjoy everything artistic! My engine runs off of excitement. I enjoy practicing new things and sharpening my existing skills on the daily basis. I like to stay busy and up to date on the latest trends and technology. I am a designer with many styles and I aim to please. My passion in design, science, technology, and human interaction has been fulfilled with the career path I have chosen, and I am excited for whats to come ahead as I continue my education and experiences.</p> <p>With my free time I enjoy spending quality time with my kids and family, going to the beach, working out, watching TED or Viceland, admiring street art, designing graphic T-shirts, turning dreams into reality, and impacting others with a positive change.</p> </div> </div> </div> </div> <div class="col-md-3 col-sm-6 col-xs-12 center"> <div class="about-top"> <img src="/images/process.png" alt="my process"> <h3>my process</h3> </div> <div class="about-wrapper"> <div class="about-pre-content"> <p>“There is a method to my madness.”</p> <p>- Shakespeare</p> </div> <div class="about-content"> <img class="about-content-image" src="/images/about-me-process.png" alt="about-me"> <div class="text"> <p>I take whatever concept I have at hand and then I research my audience, I start off with sketching wireframes, once the concept is in play I put my design into a digital mockup and work on the interactions and over all visual design, I then create a live prototype to deliver the project. Once the completed project goes live I gather the data and analytics from the users interaction and I then make any modifications to the design based on facts and I make sure all data and the content is all correlating together for the SEO.</p> <p>TADA you got yourself a beautiful master piece after a boat load of expresso shots.</p> </div> </div> </div> </div> <div class="col-md-3 col-sm-6 col-xs-12 center"> <div class="about-top"> <img src="/images/experience.png" alt="my experience"> <h3>my experience</h3> </div> <div class="about-wrapper"> <div class="about-pre-content"> <p>“It's not just what it looks like and feels like, it's how it works.”</p> <p>- Steve Jobs</p> </div> <div class="about-content"> <img class="about-content-image" src="/images/about-me-experience.png" alt="about-me"> <div class="text">
+                  <p>*I worked for the Government and Legislative department at the Los Angeles County RRCC as a Lead UI Designer. I redesigned their website, created eblasts, designed numerous amount of print material for the Presidential elections, and I also did mockups for the new voting system.</p>
+            <p>*I worked for Implant Direct in the IT web department as the Head UX/UI designer for their global international web team. I redesigned their marketing site to be responsive, I redesigned their Ecommerce site, I also designed a parallax landing page, newsletters, and maintained 9 of their international websites.</p> <p>*I turned my hobby of designing and printing into my very own custom design company. Designing and printing apparel, websites, and marketing material.</p> </div> </div> </div> </div> <div class="col-md-3 col-sm-6 col-xs-12 center"> <div class="about-top"> <img src="/images/education.png" alt="my education"> <h3>my education</h3> </div> <div class="about-wrapper"> <div class="about-pre-content"> <p>“Be happy, but never satisfied.”</p> <p>- Bruce Lee</p> </div> <div class="about-content"> <img class="about-content-image" src="/images/about-me-education.png" alt="about-me"> <div class="text"> <p>*I am currently enrolled at The Art Institute with 70% complete of my Graphic and Web Design BS.</p> <p>*I have my AA in Web Interactive Media Design from The Art Institute of California.</p> <p>*I am certified in UX design from Nielsen Norman Group.</p><p>*I completed my AA in Cognitive development at Moorpark college </p> <p>*Lynda.com is always my go to for current on the fly education.</p> </div> </div> </div> </div> </div> </section> <!--
+    /**
+     * Contact
+     */ --> <section id="work-with-me" class="container-fluid"> <div class="text-center wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="100ms"> <h1>work with me</h1> </div> <form class="container" ng-submit="ctrl.contact()"> <span class="input input" ng-class="{'input--filled': ctrl.form.name}"> <input class="input__field input__field" type="text" id="input-1" ng-model="ctrl.form.name" required> <label class="input__label input__label" for="input-1"> <span class="input__label-content input__label-content" data-content="Name">Name</span> </label> <svg class="graphic graphic" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none"> <path d="M1200,9c0,0-305.005,0-401.001,0C733,9,675.327,4.969,598,4.969C514.994,4.969,449.336,9,400.333,9C299.666,9,0,9,0,9v43c0,0,299.666,0,400.333,0c49.002,0,114.66,3.484,197.667,3.484c77.327,0,135-3.484,200.999-3.484C894.995,52,1200,52,1200,52V9z"></path> </svg> </span> <span class="input input" ng-class="{'input--filled': ctrl.form.email}"> <input class="input__field input__field" type="email" id="input-2" ng-model="ctrl.form.email" required> <label class="input__label input__label" for="input-2"> <span class="input__label-content input__label-content" data-content="Email">Email</span> </label> <svg class="graphic graphic" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none"> <path d="M1200,9c0,0-305.005,0-401.001,0C733,9,675.327,4.969,598,4.969C514.994,4.969,449.336,9,400.333,9C299.666,9,0,9,0,9v43c0,0,299.666,0,400.333,0c49.002,0,114.66,3.484,197.667,3.484c77.327,0,135-3.484,200.999-3.484C894.995,52,1200,52,1200,52V9z"></path> </svg> </span> <span class="input input" ng-class="{'input--filled': ctrl.form.message}"> <input class="input__field input__field" type="text" id="input-3" ng-model="ctrl.form.message"> <label class="input__label input__label" for="input-3"> <span class="input__label-content input__label-content" data-content="Message">Message</span> </label> <svg class="graphic graphic" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none"> <path d="M1200,9c0,0-305.005,0-401.001,0C733,9,675.327,4.969,598,4.969C514.994,4.969,449.336,9,400.333,9C299.666,9,0,9,0,9v43c0,0,299.666,0,400.333,0c49.002,0,114.66,3.484,197.667,3.484c77.327,0,135-3.484,200.999-3.484C894.995,52,1200,52,1200,52V9z"></path> </svg> </span> <button type="submit" class="btn btn-default" ng-submit="ctrl.contact()">Submit</button> </form> <hr> <div class="social container"> <a href="https://www.instagram.com/2rudesigns/" alt="Instagram"><span class="fa fa-instagram"></span></a> <a href="https://www.linkedin.com/in/patricia-bellardine-9b6ba52b" alt="Linkedin"><span class="fa fa-linkedin"></span></a> <a href="mailto:trudesigns@me.com" alt="Email"><span class="fa fa-envelope"></span></a> </div> </section> <!--
+    /**
+     * Google Analytics key will be set upon grunt deploy,
+     * grunt replace is configured to find the pattern @@gaKey
+     * and replace it with the current configs gaKey.
+     */ --> <script>!function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+     (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+     r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+     }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+     ga('create', '@@gaKey');
+     ga('send', 'pageview');</script> <script src="scripts/vendor.js"></script> <script src="scripts/scripts.js"></script> </body> </html>

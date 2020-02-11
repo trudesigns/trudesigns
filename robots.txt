@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /index/
+Allow: /about/
+Allow: /contact/
+Allow: /pricing/
+Allow: /project/
+Allow: /service/
+Allow: /ux-design-services/
+
+Sitemap: https://trudesigns.co/sitemap.xml

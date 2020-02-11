@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#crayola {
+	height: 182px;
+	width: 114px;
+	position: absolute;
+	right: 160px;
+}
+#trish {
+	height: 182px;
+	width: 115px;
+	position: absolute;
+	right: 300px;
+	padding-left: 25px;
+}
+#chaos {
+	height: 182px;
+	width: 114px;
+	padding-left: 15px;
+	position: absolute;
+	right: 420px;
+	padding-right: 25px;
+}
+#aftereffect {
+	height: 182px;
+	width: 120px;
+	padding-right: 5px;
+	padding-left: 5px;
+	position: static;
+	right: 580px;
+}
