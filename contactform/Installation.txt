@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // URL: www.freecontactform.com
 // Version: Responsive Contact Form V3.1 - Installer
 // Copyright (c) 2019 Stuart Cochrane
@@ -25,32 +24,4 @@ In your browser, open the file installationForm.php, complete the form to instal
 
 Want to incorporate the form into your own design?
 
-=======
-// URL: www.freecontactform.com
-// Version: Responsive Contact Form V3.1 - Installer
-// Copyright (c) 2019 Stuart Cochrane
-// 
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-// THE SOFTWARE.
-
-
-
-Installation instruction:
-
-Upload all files to your website.
-In your browser, open the file installationForm.php, complete the form to install.
-
-
-===========
-
-
-Want to incorporate the form into your own design?
-
->>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
 Copy the HTML from contactForm.htm and paste it into your existing page.

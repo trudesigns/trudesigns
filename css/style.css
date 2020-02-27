@@ -97,11 +97,7 @@ input[type="tel"] {
   box-shadow: none;
   height: 45px;
   outline: none;
-<<<<<<< HEAD
-  font-size: 16px;
-=======
   font-size: 14px;
->>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
 }
 
 input[type="email"]:focus,
@@ -128,11 +124,7 @@ input[type="tel"]:focus {
 
 .btn {
   display: inline-block;
-<<<<<<< HEAD
-  font-size: 16px;
-=======
   font-size: 14px;
->>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
   font-size: 0.8125rem;
   font-weight: 400;
   padding: 1rem 2.5rem;
@@ -202,11 +194,7 @@ input[type="tel"]:focus {
 
 .btn-small {
   padding: 10px 25px;
-<<<<<<< HEAD
-  font-size: 16px;
-=======
   font-size: 12px;
->>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
 }
 
 .btn-round {
@@ -276,11 +264,7 @@ input[type="tel"]:focus {
 
 .subtitle {
   color: #f75757;
-<<<<<<< HEAD
-  font-size: 16px;
-=======
   font-size: 14px;
->>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
   letter-spacing: 1px;
 }
 
@@ -348,11 +332,7 @@ input[type="tel"]:focus {
 }
 
 .text-sm {
-<<<<<<< HEAD
-  font-size: 16px;
-=======
   font-size: 14px;
->>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
 }
 
 .text-md {
@@ -487,11 +467,7 @@ a:focus {
   font-weight: 500;
   color: #fff;
   text-transform: uppercase;
-<<<<<<< HEAD
-  font-size: 16px;
-=======
   font-size: 14px;
->>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
   letter-spacing: 0.5px;
   transition: all 0.25s ease;
 }
@@ -582,11 +558,7 @@ a:focus {
 .dropdown-item {
   padding: 0.8rem 1.5rem;
   text-transform: uppercase;
-<<<<<<< HEAD
-  font-size: 16px;
-=======
   font-size: 14px;
->>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
 }
 
 .dropdown-item:hover {
@@ -624,11 +596,7 @@ ul.dropdown-menu li {
 }
 
 .slider {
-<<<<<<< HEAD
-  background: url("../images/bg/truDesign_banner.jpg") no-repeat;
-=======
   background: url("../images/bg/home-1.jpg") no-repeat;
->>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
   background-size: cover;
   background-position: 10% 0%;
   padding: 200px 0 280px 0;
@@ -1002,11 +970,7 @@ ul.dropdown-menu li {
   border-radius: 38px;
   margin-bottom: 10px;
   border: 1px solid #eee;
-<<<<<<< HEAD
-  font-size: 16px;
-=======
   font-size: 14px;
->>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
   text-transform: capitalize;
 }
 
@@ -1111,11 +1075,7 @@ h3.quote::before {
 
 .post-comments .comment-author a {
   color: #f75757;
-<<<<<<< HEAD
-  font-size: 16px;
-=======
   font-size: 14px;
->>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
   text-transform: uppercase;
 }
 
@@ -1130,11 +1090,7 @@ h3.quote::before {
   color: #f75757;
   display: inline-block;
   margin-left: 5px;
-<<<<<<< HEAD
-  font-size: 16px;
-=======
   font-size: 12px;
->>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
 }
 
 .post-comments .comment-button i {
@@ -1175,11 +1131,7 @@ h3.quote::before {
 }
 
 .blog-subtitle {
-<<<<<<< HEAD
-  font-size: 16px;
-=======
   font-size: 15px;
->>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
   padding-bottom: 10px;
   border-bottom: 1px solid #dedede;
   margin-bottom: 25px;
@@ -1264,29 +1216,17 @@ h3.quote::before {
 }
 
 .comment-wrap .media .media-heading {
-<<<<<<< HEAD
-  font-size: 16px;
-=======
   font-size: 14px;
->>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
   margin-bottom: 8px;
 }
 
 .comment-wrap .media .media-heading a {
   color: #f75757;
-<<<<<<< HEAD
-  font-size: 16px;
-}
-
-.comment-wrap .media .comment-meta {
-  font-size: 16px;
-=======
   font-size: 13px;
 }
 
 .comment-wrap .media .comment-meta {
   font-size: 12px;
->>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
   color: #888;
 }
 
@@ -1343,11 +1283,7 @@ h3.quote::before {
 }
 
 .widget.widget-latest-post .media p {
-<<<<<<< HEAD
-  font-size: 16px;
-=======
   font-size: 12px;
->>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
   color: #808080;
 }
 
@@ -1381,11 +1317,7 @@ h3.quote::before {
   padding: 8px 15px;
   border: 1px solid #dedede;
   border-radius: 30px;
-<<<<<<< HEAD
-  font-size: 16px;
-=======
   font-size: 14px;
->>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
   transition: all 0.3s ease;
 }
 

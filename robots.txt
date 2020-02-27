@@ -6,10 +6,7 @@ Allow: /pricing/
 Allow: /project/
 Allow: /service/
 Allow: /ux-design-services/
-<<<<<<< HEAD
-=======
 Allow: /privacyPolicy/
 
->>>>>>> 8329b7b5bdf2157a7b1760d295b1b7723b40c1c2
 
 Sitemap: https://trudesigns.co/sitemap.xml
