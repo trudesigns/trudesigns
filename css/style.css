@@ -595,11 +595,37 @@ ul.dropdown-menu li {
   background-size: cover;
 }
 
+.bg-6 {
+  background: url("../images/bg/seo-services.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.bg-7 {
+  background: url("../images/bg/branding.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.bg-8 {
+  background: url("../images/bg/consulting-services.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+
+.bg-9 {
+  background: url("../images/blog/web-services.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.bg-10 {
+  background: url("../images/bg/socialmedia-services.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+
 .slider {
   background: url("../images/bg/home-1.jpg") no-repeat;
   background-size: cover;
   background-position: 10% 0%;
-  padding: 200px 0 280px 0;
+  padding: 100px 0 100px 0;
   position: relative;
 }
 
@@ -1513,6 +1539,183 @@ h3.quote::before {
     width: 100%;
     text-align: center;
   }
+
+  /* Author - Mike Ross */  
+  #grow-your-business {
+    margin-top: 3px;
+  }
+  #form-grow-your-business .form-input-row input {
+    height: auto;
+    font-size: 20px !important;
+  }
+  #form-grow-your-business .form-input-row img {
+    margin: 10px !important;
+  }
+  #grow-your-business #header {
+    line-height: 1em;
+  }
+  #form-grow-your-business .form-input-button {
+    padding: 10px !important;
+  }
+  
 }
 
 /*# sourceMappingURL=maps/style.css.map */
+
+/* Author - Mike Ross */
+.row-item {
+	display: table;
+	width: 100%;
+}
+	.row-item .base {
+		float: left;
+	}
+	.row-item .r {
+		float: right;
+	}
+.left {
+    float: left;
+}
+.right {
+	float: right;
+}
+.align_l {
+	text-align: left;
+}
+.span {
+	width: 100%;
+}
+.hide {
+	display: none;
+}
+.pad {
+	padding: 10px;
+}
+	.pad_t {
+		padding-top: 10px;
+	}
+	.pad_r {
+		padding-right: 10px;
+	}
+	.pad_b {
+		padding-bottom: 10px;
+	}
+	.pad_l {
+		padding-left: 10px;
+	}
+	.pad_tb {
+		padding: 10px 0 10px 0;
+	}
+.margin {
+    margin: 10px;
+}
+  .margin_t {
+    margin-top: 10px;
+  }
+	.margin_rb {
+		margin: 0 10px 10px 0;
+	}
+	.margin_r {
+		margin-right: 10px;
+	}
+	.margin_b {
+		margin-bottom: 10px;
+	}
+	.margin_tb {
+		margin: 10px 0 10px 0;
+	}
+	.margin_l {
+		margin-left: 10px;
+	}
+  .margin_lr {
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+  .margin_tl {
+      margin: 10px 0 0 10px;
+  }
+  .margin_tbl {
+      margin: 10px 0 10px 10px;
+  }
+  .margin_tr {
+      margin: 10px 10px 0 0;
+  }
+.no_margin_t {
+	margin-top: 0;
+}
+.alert {
+	color: #760000;
+}
+.align_c {
+    text-align: center;
+}
+    .align_r {
+        text-align: right;
+    }
+    .align_t {
+        vertical-align: top;
+    }
+    .align_l {
+        text-align: left;
+    }
+    .margin_align_c {
+        margin: auto;
+    }
+    .margin_align_r {
+        margin-left: auto;
+    }
+.disable {
+    pointer-events: none;
+    opacity: .75;
+}
+#grow-your-business {
+  background-color: #222328;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+  #grow-your-business #header {
+    font-size: 50px;
+    margin: 15px 0 35px 0;
+    text-align: center;
+    font-weight: 900;
+  }
+  #grow-your-business #sub-header {
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+  }
+  #grow-your-business p {
+    color: #fff !important;
+  }
+  #grow-your-business #form-grow-your-business {
+    margin-top: 50px;
+  }
+  #form-grow-your-business .form-input-row {
+    background-image: url("../images/BGInputField.png?v=2");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 80px;
+    margin-top: 3px;
+  }
+    #form-grow-your-business .form-input-row input {
+      border: none;
+      margin: 10px 0 10px 20px;
+      /*width: 80%;*/
+      width: 100%;
+      font-size: 30px;
+    }
+    #form-grow-your-business .form-input-row img {
+      margin: 20px;
+    }
+  #form-grow-your-business .form-input {
+    width: 80%;
+  }
+  #form-grow-your-business .form-input-button {
+    background-image: url("../images/FormButton.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 80px;
+    margin-top: 20px; 
+    padding: 15px;
+    text-align: center;
+  }

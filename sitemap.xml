@@ -1,50 +1,128 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!--
- created with Free Online Sitemap Generator www.xml-sitemaps.com
--->
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-<loc>https://www.trudesigns.co/</loc>
-<lastmod>2019-10-11T22:36:43+00:00</lastmod>
-<priority>1.00</priority>
+  <loc>https://www.trudesigns.co/</loc>
+  <lastmod>2020-03-03T19:32:04+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>https://www.trudesigns.co/index.html</loc>
-<lastmod>2019-10-11T22:36:43+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://www.trudesigns.co/index.html</loc>
+  <lastmod>2020-03-03T19:32:04+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.trudesigns.co/about.html</loc>
-<lastmod>2019-10-11T22:36:45+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://www.trudesigns.co/about.html</loc>
+  <lastmod>2020-03-03T19:32:05+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.trudesigns.co/pricing.html</loc>
-<lastmod>2019-10-11T22:36:44+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://www.trudesigns.co/pricing.html</loc>
+  <lastmod>2020-03-03T19:32:00+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.trudesigns.co/service.html</loc>
-<lastmod>2019-10-11T22:36:44+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://www.trudesigns.co/service.html</loc>
+  <lastmod>2020-03-05T18:10:23+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.trudesigns.co/project.html</loc>
-<lastmod>2019-10-11T22:36:44+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://www.trudesigns.co/project.html</loc>
+  <lastmod>2020-03-03T19:32:05+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.trudesigns.co/contact.html</loc>
-<lastmod>2019-10-11T22:36:44+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://www.trudesigns.co/contact.html</loc>
+  <lastmod>2020-03-03T19:32:03+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.trudesigns.co/ux-design-services.html</loc>
-<lastmod>2019-10-11T22:36:42+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://www.trudesigns.co/ux-design-services.html</loc>
+  <lastmod>2020-03-03T19:32:04+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.trudesigns.co/SEO-services.html</loc>
-<lastmod>2019-10-11T21:30:58+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://www.trudesigns.co/images/NNG-UX-Certificate-Bellardine.pdf</loc>
+  <lastmod>2020-02-28T00:20:27+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
+<url>
+  <loc>https://www.trudesigns.co/branding-services.html</loc>
+  <lastmod>2020-03-03T21:52:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.trudesigns.co/SEO-services.html</loc>
+  <lastmod>2020-03-03T22:02:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.trudesigns.co/forms.html</loc>
+  <lastmod>2020-03-03T19:32:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.trudesigns.co/payment.html</loc>
+  <lastmod>2020-02-27T23:56:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.trudesigns.co/blogs.html</loc>
+  <lastmod>2019-12-04T23:42:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.trudesigns.co/privacyPolicy.html</loc>
+  <lastmod>2020-03-03T19:32:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.trudesigns.co/accessibility.html</loc>
+  <lastmod>2020-03-03T19:32:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.trudesigns.co/web-development-services.html</loc>
+  <lastmod>2020-03-05T17:31:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.trudesigns.co/business-consulting-services.html</loc>
+  <lastmod>2020-03-03T19:32:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.trudesigns.co/social-media-services.html</loc>
+  <lastmod>2020-03-03T19:32:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.trudesigns.co/form-clientVerification.html</loc>
+  <lastmod>2019-12-12T00:43:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.trudesigns.co/form-clientWebAccess.html</loc>
+  <lastmod>2019-12-12T00:44:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+<url>
+  <loc>https://www.trudesigns.co/blog.html</loc>
+  <lastmod>2020-02-27T23:56:33+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.trudesigns.co/blog-sidebar.html</loc>
+  <lastmod>2020-02-27T23:56:39+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
 </urlset>

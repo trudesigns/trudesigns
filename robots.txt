@@ -1,4 +1,8 @@
 User-agent: *
+
+
+
+
 Allow: /index/
 Allow: /about/
 Allow: /contact/
@@ -7,6 +11,12 @@ Allow: /project/
 Allow: /service/
 Allow: /ux-design-services/
 Allow: /privacyPolicy/
+Allow: /web-development-servicesy/
+Allow: /business-consulting-services/
+Allow: /SEO-services/
+Allow: /branding-services/
+Allow: /social-media-services/
 
 
-Sitemap: https://trudesigns.co/sitemap.xml
+
+
