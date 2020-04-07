@@ -16,6 +16,10 @@ Allow: /business-consulting-services/
 Allow: /SEO-services/
 Allow: /branding-services/
 Allow: /social-media-services/
+Allow: /niznick/
+Allow: /acromil/
+Allow: /doubletree/
+Allow: /blogs/
 
 
 

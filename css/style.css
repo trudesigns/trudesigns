@@ -621,6 +621,13 @@ ul.dropdown-menu li {
   background-size: cover;
 }
 
+
+.bg-11 {
+  background: url("../images/bg/doubletree_hotel.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+
 .slider {
   background: url("../images/bg/home-1.jpg") no-repeat;
   background-size: cover;
