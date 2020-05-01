@@ -20,6 +20,7 @@ Allow: /niznick/
 Allow: /acromil/
 Allow: /doubletree/
 Allow: /blogs/
+Allow: /404/
 
 
 
