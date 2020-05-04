@@ -94,4 +94,62 @@
     delay: 10,
     time: 1000
   });
+
 })(jQuery);
+
+// Author - Mike Ross
+var TRU = {
+  Proposals: {
+    _form: null,
+    _errors: [],
+    Add: function(form) {
+      TRU.Proposals._form = form;
+      if (TRU.Proposals.Valid()) {
+        $(form).submit();
+      }
+    },
+    Valid: function() {
+      let valid, required, email;
+      valid = true;
+      required = $(TRU.Proposals._form).find(".input-required input");
+      email = $(TRU.Proposals._form).find(".input-email input");
+      
+      // Check required
+      let allFilled, totalRequired, r;
+      allFilled = true;
+      totalRequired = required.length;
+      for (r = 0; r < totalRequired; r++) {
+        let requiredField = $($(required)[r]);
+        if (requiredField.val() == "") {
+          allFilled = false;
+          valid = false;
+          TRU.Proposals._errors.push(requiredField.attr("data-label") + " is required");
+        }
+      }
+
+      // Check email
+      if (allFilled) {
+        let emailValue = email.val();
+        if (!(emailValue.indexOf("@") > -1 && emailValue.indexOf(".") > -1)) {
+          valid = false;
+          TRU.Proposals._errors.push(email.attr("data-label") + " is not valid");
+        }
+      }
+
+      if (TRU.Proposals._errors.length > 0) {
+        TRU.Proposals.DisplayErrors();
+      }
+      return valid;
+    },
+    DisplayErrors: function() {
+      let output, totalErrors, e;
+      output = "";
+      totalErrors = TRU.Proposals._errors.length;
+      for (e = 0; e < totalErrors; e++) {
+        output += "<p class='error'>" + TRU.Proposals._errors[e] + "</p>";
+      }
+      $("#form-errors").html(output);
+      TRU.Proposals._errors = [];
+    }
+  }
+};
